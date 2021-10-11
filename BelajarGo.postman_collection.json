@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "BelajarGo",
+		"_postman_id": "57c20284-5164-079f-ee35-263b668fcb83",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Semua Data",
+			"request": {
+				"url": "localhost:9090/v1/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post Data",
+			"request": {
+				"url": "localhost:9090/v1/prize",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"index_prize\": \"15\",\n\t\"prize_name\": \"Coba dari Postman\",\n\t\"qouta\": \"15\",\n\t\"day_limit\": \"15\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Data By ID",
+			"request": {
+				"url": "localhost:9090/v1/prize/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data",
+			"request": {
+				"url": "localhost:9090/v1/prize/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"index_prize\": \"150\",\n\t\"prize_name\": \"Ganti dari Postman\",\n\t\"qouta\": \"115\",\n\t\"day_limit\": \"125\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Hapus Data",
+			"request": {
+				"url": "localhost:9090/v1/prize/13",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
